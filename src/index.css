@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "FontCV";
+  src: url("./assets/IranSansXfont/Webfonts/fonts/woff2/IRANSansX-Medium.woff2")
+      format("woff2"),
+    /* Modern Browsers */
+      url("../IranSansXfont/Webfonts/fonts/woff/IRANSansX-Medium.woff")
+      format("woff"); /* Older Browsers */
+}
+
+* {
+  font-family: FontCV;
+}
