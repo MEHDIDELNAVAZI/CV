@@ -321,6 +321,19 @@ function App() {
                   <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
                 </svg>
               </div>
+              <p>Redux</p>
+            </li>
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
               <p>PHP</p>
             </li>
             <li className="flex flex-row items-center gap-2">
