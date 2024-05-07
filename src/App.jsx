@@ -259,7 +259,7 @@ function App() {
               <a href="https://www.w3schools.com/">Numpy - pandas W3school</a>
             </li>
             <li className="  text-blue-500 text-[17px]">
-             <p>worked with MNIST - CIFAR10 dataset </p>
+              <p>worked with MNIST - CIFAR10 dataset </p>
             </li>
           </ul>
           <p className="text-[20px] mt-10">Education</p>
@@ -701,7 +701,7 @@ function App() {
 
             <a>
               <a
-                href="https://yahoo-boking.vercel.app/"
+                href=""
                 className="text-blue-500 underline"
               >
                 <p className="">Booking Pannel</p>
