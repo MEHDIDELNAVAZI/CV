@@ -264,7 +264,7 @@ function App() {
           </ul>
           <p className="text-[20px] mt-10">Education</p>
           <hr />
-          <p>Bachelor in Computer Science (2019 - 2023)</p>
+          <p>Bachelor in Computer Engineering (2019 - 2023)</p>
           <p>
             <a href="https://en.qom.ac.ir/" className="underline text-blue-400">
               Qom University / Iran
