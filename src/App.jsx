@@ -66,7 +66,9 @@ function App() {
           <p className="text-[20px]">Qualifications</p>
           <hr />
           <ul className="mt-4">
-            <li className="mt-3 mb-2 text-red-500">Started With : </li>
+            <li className="mt-3 mb-2 text-red-500 text-[20px]">
+              Started With : Web development
+            </li>
             <li className="flex flex-row items-center gap-3">
               <div>
                 <svg
@@ -191,6 +193,74 @@ function App() {
                 Learning the Laravel framework, and Worked with MySQL
               </p>
             </li>
+
+            <li className="mt-3 mb-2 text-green-500 text-[20px]">
+              Certifications in Web development
+            </li>
+            <ul>
+              <li className="flex flex-row items-center gap-3">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="12"
+                    width="12"
+                    viewBox="0 0 512 512"
+                  >
+                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                  </svg>
+                </div>
+                <p>
+                  HTML/CSS - JS - php - C++ in{" "}
+                  <a href="https://www.mftsk.com/" className="text-blue-400">
+                    MJFT
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </ul>
+          <br />
+
+          <ul className="mt-4">
+            <li className="mt-3 mb-2 text-red-500 text-[20px]">
+              Passionate about data science
+            </li>
+            <li className="flex flex-row items-center gap-3">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>
+                Passionate about data science, with a strong focus on Python
+                programming and expertise in machine learning algorithms,
+                including artificial neural networks (ANN), convolutional neural
+                networks (CNN), and recurrent neural networks (RNN).
+              </p>
+            </li>
+
+            <li className="mt-3 mb-2 text-green-500 text-[20px]">Courses</li>
+
+            <li className="  text-blue-500 text-[17px]">
+              <a href="https://www.youtube.com/watch?v=JxgmHe2NyeY&t=9s">
+                Machine learning
+              </a>
+            </li>
+            <li className="  text-blue-500 text-[17px]">
+              <a href="https://www.youtube.com/watch?v=d2kxUVwWWwU&t=15168s">
+                Deep learning
+              </a>
+            </li>
+            <li className="  text-blue-500 text-[17px]">
+              <a href="https://www.w3schools.com/">Numpy - pandas W3school</a>
+            </li>
+            <li className="  text-blue-500 text-[17px]">
+             <p>worked with MNIST - CIFAR10 dataset </p>
+            </li>
           </ul>
           <p className="text-[20px] mt-10">Education</p>
           <hr />
@@ -202,8 +272,7 @@ function App() {
           </p>
 
           <p className="text-[20px] mt-10">Skills</p>
-          <hr />
-
+          <p className="text-[20px] ">Web Development</p>
           <div className="flex  lg:flex-row mt-4 gap-3 flex-col">
             <li className="flex flex-row items-center gap-2">
               <div>
@@ -348,6 +417,105 @@ function App() {
                 </svg>
               </div>
               <p>Laravel</p>
+            </li>
+          </div>
+
+          <p className="text-[20px] mt-10">Data science</p>
+          <hr />
+
+          <div className="flex  lg:flex-row mt-4 gap-3 flex-col">
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>Python</p>
+            </li>
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>Tensorflow</p>
+            </li>
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>keras</p>
+            </li>
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>numpy</p>
+            </li>
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>pandas</p>
+            </li>
+
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>scikit-learn</p>
+            </li>
+
+            <li className="flex flex-row items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="12"
+                  width="12"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+              </div>
+              <p>MYSQL</p>
             </li>
           </div>
 
@@ -516,41 +684,6 @@ function App() {
         </div>
         <ul>
           <br />
-
-          <li className="flex flex-row items-center gap-2 mt-3">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="12"
-                width="12"
-                viewBox="0 0 512 512"
-              >
-                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
-              </svg>
-            </div>
-
-            <a>
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7092772076020736000/"
-                className="text-blue-500 underline"
-              >
-                <p className="">CRUD System with React and Laravel</p>
-              </a>
-            </a>
-          </li>
-          <a
-            href="https://github.com/MEHDIDELNAVAZI/LaravelApi_React_backend"
-            className="text-blue-500 underline"
-          >
-            Backend
-          </a>
-          <br />
-          <a
-            href="https://github.com/MEHDIDELNAVAZI/LaravelApi_React_Front"
-            className="text-blue-500 underline"
-          >
-            Frontend
-          </a>
         </ul>
 
         <ul>
@@ -568,12 +701,10 @@ function App() {
 
             <a>
               <a
-                href="http://yahoo.mmg.ir/"
+                href="https://yahoo-boking.vercel.app/"
                 className="text-blue-500 underline"
               >
-                <p className="">
-                  Working on a Booking webiste in Iran (Cooming Soon)
-                </p>
+                <p className="">Booking Pannel</p>
               </a>
             </a>
           </li>
