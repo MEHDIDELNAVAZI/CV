@@ -11,11 +11,6 @@ import mn4 from "./assets/Images/MNIST/4.png";
 import mn5 from "./assets/Images/MNIST/5.png";
 import mn6 from "./assets/Images/MNIST/6.png";
 
-
-
-
-
-
 import React from "react";
 import { useState } from "react";
 import "./assets/styles.css"; // Import CSS file for styling
@@ -761,7 +756,6 @@ function App() {
         <ul>
           <br />
         </ul>
-
         <ul>
           <li className="flex flex-row items-center gap-2 mt-3">
             <div>
@@ -790,9 +784,8 @@ function App() {
           <div>
             <h1>React app</h1>
             <div className="flex flex-wrap mt-5">
-              
               <img
-               src={mn2}
+                src={mn2}
                 alt="Image 2"
                 className={`mb-4 cursor-zoom-in border  ${getImageSizeClass(
                   "image2.jpg"
@@ -801,7 +794,7 @@ function App() {
               />
               <br />
               <img
-                 src={mn3}
+                src={mn3}
                 alt="Image 3"
                 className={` mb-4 border cursor-zoom-in ${getImageSizeClass(
                   "image3.jpg"
@@ -809,7 +802,7 @@ function App() {
                 onClick={() => handleImageClick("image3.jpg")}
               />
               <img
-                 src={mn4}
+                src={mn4}
                 alt="adminpannel"
                 className={`mb-4 border cursor-zoom-in ${getImageSizeClass(
                   "image4.jpg"
@@ -817,15 +810,15 @@ function App() {
                 onClick={() => handleImageClick("adminpannel.jpg")}
               />
               <img
-                 src={mn5}
+                src={mn5}
                 alt="adminpannel"
                 className={`mb-4 border cursor-zoom-in ${getImageSizeClass(
                   "image5.jpg"
                 )}`}
                 onClick={() => handleImageClick("adminpannel.jpg")}
               />
-               <img
-                 src={mn6}
+              <img
+                src={mn6}
                 alt="adminpannel"
                 className={`mb-4 border cursor-zoom-in ${getImageSizeClass(
                   "image6.jpg"
@@ -835,6 +828,17 @@ function App() {
             </div>
           </div>
         </ul>
+        <a>
+          <a
+            href="https://github.com/MEHDIDELNAVAZI/ML_AI_learn"
+            className="text-blue-500 underline"
+          >
+            <p className="">
+              machine learning algoes with examples 
+            </p>
+          </a>
+        </a>
+       
       </div>
       <br />
 
