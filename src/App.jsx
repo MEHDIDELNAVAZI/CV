@@ -3,6 +3,19 @@ import image1 from "./assets/Images/Eccomerce/1.png";
 import image2 from "./assets/Images/Eccomerce/2.png";
 import image3 from "./assets/Images/Eccomerce/3.png";
 import adminpannel from "./assets/Images/Eccomerce/adminpannel.png";
+
+import mn1 from "./assets/Images/MNIST/1.png";
+import mn2 from "./assets/Images/MNIST/2.png";
+import mn3 from "./assets/Images/MNIST/3.png";
+import mn4 from "./assets/Images/MNIST/4.png";
+import mn5 from "./assets/Images/MNIST/5.png";
+import mn6 from "./assets/Images/MNIST/6.png";
+
+
+
+
+
+
 import React from "react";
 import { useState } from "react";
 import "./assets/styles.css"; // Import CSS file for styling
@@ -11,7 +24,6 @@ function App() {
   function VideoPlayer() {
     return (
       <div>
-        
         <video controls width="500" height="300">
           <source src="../05.mp4" type="video/mp4" />
           {/* Add more <source> tags for different video formats if needed */}
@@ -777,7 +789,50 @@ function App() {
 
           <div>
             <h1>React app</h1>
-            <VideoPlayer />
+            <div className="flex flex-wrap mt-5">
+              
+              <img
+               src={mn2}
+                alt="Image 2"
+                className={`mb-4 cursor-zoom-in border  ${getImageSizeClass(
+                  "image2.jpg"
+                )}`}
+                onClick={() => handleImageClick("image2.jpg")}
+              />
+              <br />
+              <img
+                 src={mn3}
+                alt="Image 3"
+                className={` mb-4 border cursor-zoom-in ${getImageSizeClass(
+                  "image3.jpg"
+                )}`}
+                onClick={() => handleImageClick("image3.jpg")}
+              />
+              <img
+                 src={mn4}
+                alt="adminpannel"
+                className={`mb-4 border cursor-zoom-in ${getImageSizeClass(
+                  "image4.jpg"
+                )}`}
+                onClick={() => handleImageClick("adminpannel.jpg")}
+              />
+              <img
+                 src={mn5}
+                alt="adminpannel"
+                className={`mb-4 border cursor-zoom-in ${getImageSizeClass(
+                  "image5.jpg"
+                )}`}
+                onClick={() => handleImageClick("adminpannel.jpg")}
+              />
+               <img
+                 src={mn6}
+                alt="adminpannel"
+                className={`mb-4 border cursor-zoom-in ${getImageSizeClass(
+                  "image6.jpg"
+                )}`}
+                onClick={() => handleImageClick("adminpannel.jpg")}
+              />
+            </div>
           </div>
         </ul>
       </div>
