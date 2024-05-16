@@ -5,65 +5,76 @@ import image3 from "./assets/Images/Eccomerce/3.png";
 import adminpannel from "./assets/Images/Eccomerce/adminpannel.png";
 import React from "react";
 import { useState } from "react";
-import './assets/styles.css'; // Import CSS file for styling
-
+import "./assets/styles.css"; // Import CSS file for styling
 
 function App() {
+  function VideoPlayer() {
+    return (
+      <div>
+        
+        <video controls width="500" height="300">
+          <source src="../05.mp4" type="video/mp4" />
+          {/* Add more <source> tags for different video formats if needed */}
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    );
+  }
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
     setSelectedImage(image === selectedImage ? null : image);
   };
 
+  const TopicsList = ({ topics }) => {
+    return (
+      <div className="mt-5">
+        <h2 className="header text-red-500 text-[18px]">
+          Topics in Deep Learning and Machine Learning
+        </h2>
+        <ul className="topics-list">
+          {topics.map((topic, index) => (
+            <li key={index} className="topic-item mt-5">
+              {typeof topic === "string" ? (
+                <span className="topic">{topic}</span>
+              ) : (
+                <div className="sublist">
+                  <span className="sublist-title">{topic[0]}</span>
+                  <ul className="">
+                    {topic[1].map((subTopic, subIndex) => (
+                      <li key={subIndex} className="subtopic-item">
+                        {subTopic}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
 
-
-const TopicsList = ({ topics }) => {
-  return (
-    <div className="mt-5">
-    <h2 className="header text-red-500 text-[18px]">Topics in Deep Learning and Machine Learning</h2>
-    <ul className="topics-list">
-      {topics.map((topic, index) => (
-        <li key={index} className="topic-item mt-5">
-          {typeof topic === 'string' ? (
-            <span className="topic">{topic}</span>
-          ) : (
-            <div className="sublist">
-              <span className="sublist-title">{topic[0]}</span>
-              <ul className="">
-                {topic[1].map((subTopic, subIndex) => (
-                  <li key={subIndex} className="subtopic-item">
-                    {subTopic}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </li>
-      ))}
-    </ul>
-  </div>
-  );
-};
-
-const topics = [
-  'Linear Regression Algorithm',
-  'Ridge and Lasso Regression',
-  'Logistic Regression',
-  'Naive Bayes',
-  'Decision Tree Classification',
-  ['Ensemble Techniques', ['Bagging', 'Boosting', 'AdaBoost', 'Gradient Boosting', 'XGBoost']],
-  'Random Forest Classifier and Regressor',
-  'K-Means Clustering',
-  'Hierarchical Clustering',
-  'Silhouette Score for Validating Clustering Problems',
-  'DBSCAN Clustering',
-  'Support Vector Machines (SVM)',
-  'ANN',
-  'CNN',
-
-
-];
-
+  const topics = [
+    "Linear Regression Algorithm",
+    "Ridge and Lasso Regression",
+    "Logistic Regression",
+    "Naive Bayes",
+    "Decision Tree Classification",
+    [
+      "Ensemble Techniques",
+      ["Bagging", "Boosting", "AdaBoost", "Gradient Boosting", "XGBoost"],
+    ],
+    "Random Forest Classifier and Regressor",
+    "K-Means Clustering",
+    "Hierarchical Clustering",
+    "Silhouette Score for Validating Clustering Problems",
+    "DBSCAN Clustering",
+    "Support Vector Machines (SVM)",
+    "ANN",
+    "CNN",
+  ];
 
   const getImageSizeClass = (image) => {
     return selectedImage === image
@@ -754,20 +765,26 @@ const topics = [
 
             <a>
               <a
-                href=""
+                href="https://github.com/MEHDIDELNAVAZI/MNIST_CIFAR10_FRONT"
                 className="text-blue-500 underline"
               >
-                <p className="">Booking Pannel</p>
+                <p className="">
+                  MNIST AND CIFAR10 dataset predict with react and Flask
+                </p>
               </a>
             </a>
           </li>
+
+          <div>
+            <h1>React app</h1>
+            <VideoPlayer />
+          </div>
         </ul>
       </div>
       <br />
 
       <br />
       <br />
-     
     </>
   );
 }
