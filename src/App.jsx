@@ -3,8 +3,10 @@ import image1 from "./assets/Images/Eccomerce/1.png";
 import image2 from "./assets/Images/Eccomerce/2.png";
 import image3 from "./assets/Images/Eccomerce/3.png";
 import adminpannel from "./assets/Images/Eccomerce/adminpannel.png";
-
+import React from "react";
 import { useState } from "react";
+import './assets/styles.css'; // Import CSS file for styling
+
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -12,6 +14,56 @@ function App() {
   const handleImageClick = (image) => {
     setSelectedImage(image === selectedImage ? null : image);
   };
+
+
+
+const TopicsList = ({ topics }) => {
+  return (
+    <div className="mt-5">
+    <h2 className="header text-red-500 text-[18px]">Topics in Deep Learning and Machine Learning</h2>
+    <ul className="topics-list">
+      {topics.map((topic, index) => (
+        <li key={index} className="topic-item mt-5">
+          {typeof topic === 'string' ? (
+            <span className="topic">{topic}</span>
+          ) : (
+            <div className="sublist">
+              <span className="sublist-title">{topic[0]}</span>
+              <ul className="">
+                {topic[1].map((subTopic, subIndex) => (
+                  <li key={subIndex} className="subtopic-item">
+                    {subTopic}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+  );
+};
+
+const topics = [
+  'Linear Regression Algorithm',
+  'Ridge and Lasso Regression',
+  'Logistic Regression',
+  'Naive Bayes',
+  'Decision Tree Classification',
+  ['Ensemble Techniques', ['Bagging', 'Boosting', 'AdaBoost', 'Gradient Boosting', 'XGBoost']],
+  'Random Forest Classifier and Regressor',
+  'K-Means Clustering',
+  'Hierarchical Clustering',
+  'Silhouette Score for Validating Clustering Problems',
+  'DBSCAN Clustering',
+  'Support Vector Machines (SVM)',
+  'ANN',
+  'CNN',
+
+
+];
+
 
   const getImageSizeClass = (image) => {
     return selectedImage === image
@@ -262,6 +314,7 @@ function App() {
               <p>worked with MNIST - CIFAR10 dataset </p>
             </li>
           </ul>
+          <TopicsList topics={topics} />
           <p className="text-[20px] mt-10">Education</p>
           <hr />
           <p>Bachelor in Computer Engineering (2019 - 2023)</p>
@@ -714,6 +767,7 @@ function App() {
 
       <br />
       <br />
+     
     </>
   );
 }

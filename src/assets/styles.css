@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.topics-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.header {
+  color: #333;
+}
+
+.topics-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.topic-item {
+  margin-bottom: 15px;
+}
+
+.topic {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.topic:hover {
+  background-color: #ddd;
+}
+
+.sublist-title {
+  font-weight: bold;
+}
+
+.subtopics-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.subtopic-item {
+  margin-bottom: 5px;
+}
+
+.subtopic-item:hover {
+  color: #007bff;
+  cursor: pointer;
+}
